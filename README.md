@@ -10,12 +10,14 @@ Aucune donnée confidentielle n'est utilisée : le projet `pulselab` travaille s
 
 ```
 Jour1/
-  TP_Day1_Participant.html      <- la fiche de TP du jour 1 (ouvrir dans un navigateur)
-  pulselab_day1_starter.zip     <- le projet Python de départ du jour 1
+  AI_For_Developers_CGG_Services_SAS_Day1.pdf   <- support de présentation du jour 1
+  TP_Day1_Participant.html                      <- la fiche de TP du jour 1 (ouvrir dans un navigateur)
+  pulselab_day1_starter.zip                     <- le projet Python de départ du jour 1
 
 Jour2/
-  TP_Day2_Participant.html      <- la fiche de TP du jour 2
-  pulselab_day2_starter.zip     <- le projet Python de départ du jour 2 (état de référence propre)
+  AI_For_Developers_CGG_Services_SAS_Day2.pdf   <- support de présentation du jour 2
+  TP_Day2_Participant.html                      <- la fiche de TP du jour 2
+  pulselab_day2_starter.zip                     <- le projet Python de départ du jour 2 (état de référence propre)
 ```
 
 ## Comment démarrer

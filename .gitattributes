@@ -1,3 +1,4 @@
 *.zip binary
 *.html text eol=lf
 *.md text eol=lf
+*.pdf binary
