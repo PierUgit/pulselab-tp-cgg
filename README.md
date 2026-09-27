@@ -12,15 +12,18 @@ Aucune donnée confidentielle n'est utilisée : le projet `pulselab` travaille s
 Jour1/
   TP_Day1_Participant.html      <- la fiche de TP du jour 1 (ouvrir dans un navigateur)
   pulselab_day1_starter.zip     <- le projet Python de départ du jour 1
-```
 
-Le dossier `Jour2/` sera ajouté avant le début du jour 2 : faites `git pull` ce jour-là.
+Jour2/
+  TP_Day2_Participant.html      <- la fiche de TP du jour 2
+  pulselab_day2_starter.zip     <- le projet Python de départ du jour 2 (état de référence propre)
+```
 
 ## Comment démarrer
 
 1. Récupérez ce dépôt (`git clone <url>` ou `git pull` si vous l'avez déjà).
 2. Ouvrez `Jour1/TP_Day1_Participant.html` dans votre navigateur (double-clic : la page est autonome, aucun réseau requis).
 3. Suivez le TP 1.0 : il vous guide pour dézipper `pulselab_day1_starter.zip` et mettre en place votre environnement Python.
+4. Le jour 2, faites de même avec le dossier `Jour2/` (`git pull` d'abord si vous aviez cloné avant).
 
 Vos cases cochées et vos notes dans les pages HTML sont sauvegardées **localement dans votre navigateur** (pas dans ce dépôt).
 
