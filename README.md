@@ -1,35 +1,35 @@
 # AI for Developers – Master AI to Code Faster
-## Travaux pratiques participants (projet fil rouge "pulselab")
+## Participant hands-on labs (common-thread project "pulselab")
 
-Formation intra-entreprise CGG Services SAS · Formateur : Daouda DIOP
+Intra-company training for CGG Services SAS · Trainer: Daouda DIOP
 
-Ce dépôt contient tout ce dont vous avez besoin pour les TP, jour par jour.
-Aucune donnée confidentielle n'est utilisée : le projet `pulselab` travaille sur des mesures simulées.
+This repository contains everything you need for the labs, day by day.
+No confidential data is used: the `pulselab` project works on simulated measurements.
 
 ## Structure
 
 ```
 Jour1/
-  AI_For_Developers_CGG_Services_SAS_Day1.pdf   <- support de présentation du jour 1
-  TP_Day1_Participant.html                      <- la fiche de TP du jour 1 (ouvrir dans un navigateur)
-  pulselab_day1_starter.zip                     <- le projet Python de départ du jour 1
+  AI_For_Developers_CGG_Services_SAS_Day1.pdf   <- Day 1 slide deck
+  TP_Day1_Participant.html                      <- Day 1 lab sheet (open in a browser)
+  pulselab_day1_starter.zip                     <- Day 1 Python starter project
 
 Jour2/
-  AI_For_Developers_CGG_Services_SAS_Day2.pdf   <- support de présentation du jour 2
-  TP_Day2_Participant.html                      <- la fiche de TP du jour 2
-  pulselab_day2_starter.zip                     <- le projet Python de départ du jour 2 (état de référence propre)
+  AI_For_Developers_CGG_Services_SAS_Day2.pdf   <- Day 2 slide deck
+  TP_Day2_Participant.html                      <- Day 2 lab sheet
+  pulselab_day2_starter.zip                     <- Day 2 Python starter project (clean reference state)
 ```
 
-## Comment démarrer
+## Getting started
 
-1. Récupérez ce dépôt (`git clone <url>` ou `git pull` si vous l'avez déjà).
-2. Ouvrez `Jour1/TP_Day1_Participant.html` dans votre navigateur (double-clic : la page est autonome, aucun réseau requis).
-3. Suivez le TP 1.0 : il vous guide pour dézipper `pulselab_day1_starter.zip` et mettre en place votre environnement Python.
-4. Le jour 2, faites de même avec le dossier `Jour2/` (`git pull` d'abord si vous aviez cloné avant).
+1. Get this repository (`git clone <url>`, or `git pull` if you already have it).
+2. Open `Jour1/TP_Day1_Participant.html` in your browser (double-click: the page is self-contained, no network needed).
+3. Follow lab 1.0: it walks you through unzipping `pulselab_day1_starter.zip` and setting up your Python environment.
+4. On Day 2, do the same with the `Jour2/` folder (`git pull` first if you cloned earlier).
 
-Vos cases cochées et vos notes dans les pages HTML sont sauvegardées **localement dans votre navigateur** (pas dans ce dépôt).
+Your ticked steps and notes in the HTML pages are saved **locally in your browser** (not in this repository).
 
-## Règles rappelées dans les TP
+## Rules recalled throughout the labs
 
-- Aucune donnée confidentielle, aucun secret dans les prompts (le jeu de données est synthétique).
-- Committez avant toute action de l'IA qui peut modifier des fichiers, et relisez chaque diff.
+- No confidential data, no secrets in prompts (the dataset is synthetic).
+- Commit before any AI action that can edit files, and read every diff.
