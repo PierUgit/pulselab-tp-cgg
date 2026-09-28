@@ -1,0 +1,46 @@
+{
+  // Team template for Kilo Code. Copy it to your project root as kilo.jsonc (or to .kilo/kilo.jsonc).
+  // Layout and keys were checked against the Kilo Code documentation (kilo.ai/docs, September 2026).
+  // Project permissions are cached: reload the VS Code window (or start a new CLI session) after editing this file.
+  "$schema": "https://app.kilo.ai/config.json",
+
+  // Extra instruction files (paths or globs), loaded on top of AGENTS.md
+  "instructions": [".kilo/rules/*.md"],
+
+  "permission": {
+    // Rules are evaluated in order and the LAST matching rule wins:
+    // put the broad rule first and the exceptions after it. Then TEST that your rules behave as you expect (see README).
+    "read": {
+      "*": "allow",
+      "*.env": "ask",
+      "*.env.*": "ask",
+      "*.env.example": "allow"
+    },
+    "edit": {
+      "*": "ask",
+      // files that define what "correct" means: the agent must not change them
+      "tests/golden/*": "deny"
+    },
+    "bash": {
+      "*": "ask",
+      // read-only and test commands you are happy to run without a prompt (adapt to your project)
+      "git status *": "allow",
+      "git diff *": "allow",
+      "git log *": "allow",
+      "python -m pytest *": "allow",
+      // never without you
+      "rm *": "deny",
+      "git reset --hard *": "deny",
+      "git clean *": "deny"
+    },
+    "webfetch": "ask",
+    "websearch": "ask",
+    "external_directory": "ask",
+    // which subagents an agent may call (see .kilo/agents/)
+    "task": {
+      "*": "ask",
+      "reviewer": "allow",
+      "test-writer": "allow"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+# DRAFT, never executed: syntax checked only.
+# Illustrative CI pipeline (GitHub Actions syntax). Adapt it to YOUR CI system.
+# Deterministic checks are the gate. The AI review job is advisory only.
+name: ci
+
+on:
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt pytest-cov
+      - run: python -m pytest -q --cov=pulselab --cov-fail-under=80
+
+  ai-review:
+    # Advisory: never blocks the merge. Disabled until your approved AI tool is configured.
+    if: false
+    needs: tests
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions:
+      contents: read
+      pull-requests: write        # only to post comments
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Review the diff with the approved tool
+        run: |
+          git diff origin/${{ github.base_ref }}...HEAD > pr.diff
+          # your-approved-ai-cli --instructions docs/REVIEW_CRITERIA.md < pr.diff > review.md
+          # Post review.md as a PR comment with your CI's own mechanism.
