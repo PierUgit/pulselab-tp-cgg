@@ -1,4 +1,7 @@
 *.zip binary
+*.pdf binary
 *.html text eol=lf
 *.md text eol=lf
-*.pdf binary
+*.jsonc text eol=lf
+*.yml text eol=lf
+*.py text eol=lf
